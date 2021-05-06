@@ -5,8 +5,9 @@ introduction("Yvonne",23)
     serveDrinks(4)
     serveDrinks(10)
     serveDrinks(12)
-    serveDrinks(17)
     println(namesArray(arrayOf("Yvonne","Cate","Shadya")))
+
+
  var product=multiply(10 , 10)
     println(product)
     var result=divide(200,40)
@@ -18,7 +19,9 @@ introduction("Yvonne",23)
     human.speak("I love food")
     human.birthday()
 
-    comparison(30,20)
+    println(comparison(30,20))
+println(names("mercy","Paul","john","tim","pesh"))
+
 
 }
 fun introduction(name:String,age:Int){
@@ -70,11 +73,16 @@ class Humanbeing(var name:String,var age:Int,var weight:Float) {
     }
 }
 
-fun comparison(num1:Int,num2: Int):Int{
+fun comparison(num1:Int,num2: Int):Int {
 
-if(num1<num2){
-    return num1;
-}else{
-    return num2;
+    if (num1 < num2) {
+
+    }else{
+        println("num2")
+    }
+    return num1
 }
+
+fun names(name1:String,name2:String,name3:String,name4:String,name5:String):Array<String>{
+    return  arrayOf(name1,name2,name3,name4,name5)
 }
